@@ -1,0 +1,32 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "image uploader challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "start": "node ./dist"
+  },
+  "keywords": [],
+  "author": "Brayan Perez",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "cloudinary": "^1.27.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.13",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "nodemon": "^2.0.15"
+  }
+}
